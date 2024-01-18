@@ -1,0 +1,292 @@
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #292b2c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40;
+    border-bottom: 4px solid #dc3545;
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* CSS for Home Section */
+#home {
+    max-height: 100vh; /* Set a maximum height relative to the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    /* background-image: url('assets/img/main_logo_bkground.png'); */
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+/* Background Logo Animation */
+.background-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    position: relative; /* Set to relative */
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Text Logo Animation */
+.text-logo {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+    position: absolute; /* Set to absolute */
+    left: 0;
+    top: 0;
+    animation: slideIn 2.5s ease-in-out 0.1s forwards;
+}
+
+#home h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+#home p {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Keyframe animation for fading in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Keyframe animation for sliding in */
+@keyframes slideIn {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+.logo {
+    max-width: 500px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#home h1, #home p {
+    color: #fff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Background opacity */
+    padding: 10px 20px; /* Add padding for better readability */
+    border-radius: 10px; /* Rounded corners for the text background */
+    display: inline-block; /* Keep elements on the same line */
+} 
+
+/* Section heading styles */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #dc3545;
+}
+
+/* About Us Section */
+#about {
+
+    background: linear-gradient(75deg, #313131, #761b12); /* Replace these colors with your preferred gradient colors */
+    color: #fff;
+    padding: 50px 0; /* Adjust the padding as needed */
+    text-align: left;
+}
+
+/* Add this CSS to your stylesheet */
+#about p {
+    opacity: 0;   /*Set initial opacity to 0 */
+    transform: translateY(20%); /* Start off-screen to the left */
+    transition: opacity 1s, transform 1s; /* Set transition properties */
+}
+
+#about p.show {
+    opacity: 1; /* When the 'show' class is added, make the paragraph visible */
+    transform: translateY(0); /* Move the paragraph to its original position */
+}
+
+
+#services {
+    background: linear-gradient(75deg, #313131, #761b12);
+}
+
+
+/* Service cards styles (customize as needed) */
+.service-card {
+    background-color: #1e262d;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: #1e262d;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+    opacity: 0; /* Set initial opacity to 0 */
+    transform: translateY(20px); /* Move the items down slightly */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* Increase the icon size and reduce text size */
+.service-item i {
+    font-size: 48px; /* Adjust the size as needed */
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 18px; /* Adjust the size as needed */
+}
+
+.service-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Portfolio item styles (customize as needed) */
+.portfolio-item {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact section styles */
+iframe {
+    border: none;
+    border-radius: 10px;
+    background-color: #343a40;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Footer Styles */
+.footer-columns {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer-column {
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #dc3545;
+    text-decoration: underline;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.footer-logo {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 4px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #dc3545;
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 767px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
