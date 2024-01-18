@@ -38,3 +38,9 @@ document.addEventListener('scroll', function () {
     handleAboutParagraphScroll();
     handleServiceItemScroll();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // JavaScript to set the current year dynamically
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+  });  
