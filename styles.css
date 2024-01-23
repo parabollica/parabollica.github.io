@@ -149,6 +149,19 @@ h2 {
     transform: translateY(0); /* Move the paragraph to its original position */
 }
 
+.transparent-box {
+    background-color: rgba(93, 0, 0, 0.7); /* Adjust the alpha value for transparency */
+    font-size: 1rem;
+}
+
+.transparent-box h5 {
+    font-size: 1.5rem; /* Adjust the heading font size */
+}
+
+.transparent-box p {
+    font-size: 1rem; /* Adjust the paragraph font size */
+}
+
 
 #services {
     background: linear-gradient(75deg, #313131, #761b12);
