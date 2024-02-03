@@ -108,3 +108,14 @@ document.addEventListener('DOMContentLoaded', () => {
       requestAnimationFrame(animateScroll);
     }
   });
+
+// Function to show the modal for a specific service
+function showServiceDetails(serviceNumber) {
+  $('#serviceModal' + serviceNumber).modal('show');
+}
+
+// Function to close the modal for a specific service
+function closeServiceDetails(serviceNumber) {
+  $('#serviceModal' + serviceNumber).modal('hide');
+}
+
