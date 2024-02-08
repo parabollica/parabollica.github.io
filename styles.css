@@ -222,13 +222,6 @@ h2 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Additional styles for service details */
-.service-details {
-  display: none;
-  padding: 20px;
-  text-align: left;
-}
-
 /* Custom styles for Bootstrap modal */
 .modal-content {
   background-color: #1e262d; /* Set the background color to match your website */
@@ -236,6 +229,9 @@ h2 {
 }
 
 .modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   border-bottom: 1px solid #fff; /* Add a border between header and body */
   background: linear-gradient(75deg, #761b12, #313131);
 }
