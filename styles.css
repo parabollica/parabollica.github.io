@@ -218,6 +218,7 @@ h2 {
 }
 
 .service-item:hover {
+  cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
