@@ -192,11 +192,11 @@ h2 {
 }
 
 .service-item {
+  max-width: 95%;
   background-color: #1e262d;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
-  /* transition: transform 0.3s, box-shadow 0.3s; */
   opacity: 0; /* Set initial opacity to 0 */
   transform: translateY(20px); /* Move the items down slightly */
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
