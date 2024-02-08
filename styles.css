@@ -185,7 +185,7 @@ h2 {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
   text-align: center;
   margin-top: 30px;
@@ -269,8 +269,8 @@ h2 {
 }
 
 .modal-body strong {
-    display: block;
-    margin-top: 10px;
+  display: block;
+  margin-top: 10px;
 }
 
 .modal-body p {
@@ -278,7 +278,7 @@ h2 {
 }
 
 .modal-body p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .modal-body ul {
@@ -322,26 +322,24 @@ h2 {
 
 /* Add this CSS for larger icons */
 .modal-list li i {
-    font-size: 75px; /* Adjust the size as needed */
+  font-size: 75px; /* Adjust the size as needed */
 }
 
 .modal-heading {
-    text-align: center;
-    margin-bottom: 15px; /* Add some margin for spacing */
+  text-align: center;
+  margin-bottom: 15px; /* Add some margin for spacing */
 }
 
-
 .modal-technologies {
-    list-style-type: none;
-    padding-left: 0;
-    text-align: center; /* Center-align the list */
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center; /* Center-align the list */
 }
 
 .modal-technologies li {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
-
 
 /* Portfolio item styles (customize as needed) */
 .portfolio-item {
