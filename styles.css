@@ -185,7 +185,7 @@ h2 {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(28em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 20px;
   text-align: center;
   margin-top: 30px;
@@ -227,22 +227,6 @@ h2 {
   display: none;
   padding: 20px;
   text-align: left;
-}
-
-.service-modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 80%;
-  max-height: 80%;
-  overflow-y: auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1;
 }
 
 /* Custom styles for Bootstrap modal */
@@ -296,7 +280,8 @@ h2 {
 
 /* Adjust the modal size */
 .modal-dialog {
-  max-width: 80%; /* Set the maximum width */
+  justify-content: center; 
+  max-width: 90%; /* Set the maximum width */
 }
 
 /* Add this CSS to style the modal content */
