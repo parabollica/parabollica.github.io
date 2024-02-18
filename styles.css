@@ -146,6 +146,7 @@ h2 {
   opacity: 0; /*Set initial opacity to 0 */
   transform: translateY(20%); /* Start off-screen to the left */
   transition: opacity 1s, transform 1s; /* Set transition properties */
+  text-align: justify;
 }
 
 #about p.show {
