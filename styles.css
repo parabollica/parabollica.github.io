@@ -419,6 +419,10 @@ footer {
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .footer-columns p{
+    padding: 5px;
+  }
 }
 
 /* Back to Top Button Styles */
