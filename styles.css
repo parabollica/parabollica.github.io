@@ -131,13 +131,13 @@ h2 {
 
 /* About Us Section */
 #about {
+  min-width: 100%;
   background: linear-gradient(
     75deg,
     #313131,
     #761b12
   ); /* Replace these colors with your preferred gradient colors */
   color: #fff;
-  padding: 50px 0; /* Adjust the padding as needed */
   text-align: left;
 }
 
@@ -173,24 +173,28 @@ h2 {
 }
 
 #services {
+  min-width: 100%;
   background: linear-gradient(75deg, #313131, #761b12);
-}
-
-/* Service cards styles (customize as needed) */
-.service-card {
-  background-color: #1e262d;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+  gap: 2em;
   text-align: center;
   margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .service-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .service-item {
@@ -225,11 +229,17 @@ h2 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Custom styles for Bootstrap modal */
-.modal-content {
+/* Adjust the modal size */
+.modal-dialog {
   background-color: #1e262d; /* Set the background color to match your website */
-  color: #fff; /* Set the text color to white */
+  justify-content: center;
+  max-width: 90%; /* Set the maximum width */
 }
+
+/* .modal-content {
+  background-color: #1e262d; /* Set the background color to match your website
+  color: #fff; /* Set the text color to white 
+} */
 
 .modal-header {
   position: sticky;
@@ -239,7 +249,6 @@ h2 {
   background: linear-gradient(75deg, #761b12, #313131);
 }
 
-/* Add this CSS to change the color of the close button */
 .modal-header .close {
   color: white;
 }
@@ -275,12 +284,6 @@ h2 {
 
 .modal-footer {
   border-top: 1px solid #fff; /* Add a border between body and footer */
-}
-
-/* Adjust the modal size */
-.modal-dialog {
-  justify-content: center;
-  max-width: 90%; /* Set the maximum width */
 }
 
 /* Add this CSS to style the modal content */
@@ -325,16 +328,6 @@ h2 {
   margin-right: 10px;
 }
 
-/* Portfolio item styles (customize as needed) */
-.portfolio-item {
-  background-color: #343a40;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-/* Contact section styles */
 iframe {
   border: none;
   border-radius: 10px;
@@ -367,8 +360,9 @@ footer {
 
 .footer-column h4 {
   font-size: 18px;
+  font-weight: bold;
   margin-bottom: 10px;
-  color: #dc3545;
+  color: #f00000;
   text-decoration: underline;
 }
 
@@ -384,6 +378,11 @@ footer {
 .footer-column ul li a {
   margin-bottom: 5px;
   color: #ffffff;
+}
+
+.footer-column a {
+  margin-bottom: 5px;
+  color: #f00000;
 }
 
 .footer-logo {
