@@ -408,7 +408,6 @@ footer {
   color: #dc3545;
 }
 
-/* Media Query for Responsive Layout */
 @media (max-width: 767px) {
   .footer-columns {
     flex-direction: column;
