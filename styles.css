@@ -172,6 +172,68 @@ h2 {
   font-size: 1rem; /* Adjust the paragraph font size */
 }
 
+#whyParabollica {
+  min-width: 100%;
+  background: linear-gradient(75deg, #761b12, #ffe4e1);
+  padding: 30px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center the content */
+}
+
+#whyParabollica h2 {
+  color: #1e262d;
+  margin-bottom: 30px; /* Add space below the heading */
+}
+
+#whyParabollica hr {
+  border: 0; /* Remove the default border */
+  height: 2px; /* Set the height of the line */
+  background-color: #840d0d; /* Set the color of the line */
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+.whyParabollica-image-block {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Two items per row */
+  grid-gap: 0; /* Remove gap between grid items */
+  margin-bottom: 30px; /* Add space between blocks */
+  margin-top: 30px;
+}
+
+.whyParabollica-image {
+  max-width: 100%; /* Ensure images take full width of their grid cell */
+  height: auto;
+  border-radius: 10px;
+}
+
+.whyParabollica-image-caption {
+  background-color: rgba(40, 0, 0, 0.9);
+  color: #fbfbfb;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.whyParabollica-image-caption {
+  font-size: 18px; /* Increased font size for paragraphs */
+}
+
+.whyParabollica-image-caption.left-align {
+  text-align: left; /* Align text to the left for captions on the left side */
+}
+
+.whyParabollica-image-caption.right-align {
+  text-align: right; /* Align text to the right for captions on the right side */
+}
+
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .whyParabollica-image-block {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
+
+
 #services {
   min-width: 100%;
   background: linear-gradient(75deg, #313131, #761b12);
