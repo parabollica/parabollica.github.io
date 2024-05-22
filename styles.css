@@ -141,7 +141,6 @@ h2 {
   text-align: left;
 }
 
-/* Add this CSS to your stylesheet */
 #about p {
   opacity: 0; /*Set initial opacity to 0 */
   transform: translateY(20%); /* Start off-screen to the left */

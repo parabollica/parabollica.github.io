@@ -11,10 +11,11 @@ function isElementInViewport(el) {
 
 function handleAboutParagraphScroll() {
     var aboutParagraph = document.querySelector('#about .about-paragraph');
+    var paragraphTop = aboutParagraph.getBoundingClientRect().top;
 
-    if (isElementInViewport(aboutParagraph) && !aboutParagraph.classList.contains('show')) {
-        aboutParagraph.classList.add('show');
-    }
+    if (paragraphTop <= window.innerHeight && !aboutParagraph.classList.contains('show')) {
+      aboutParagraph.classList.add('show');
+  }
 }
 
 function handleServiceItemScroll() {
